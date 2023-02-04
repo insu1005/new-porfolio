@@ -1,11 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #130d0a;
-    font-family: "Playfair Display", serif;
-    color: #fff;
-  }
+
+/* common -S */
+h1, .tit { font: 60px 'Black Han Sans' ; }
+/* common -E */
 
   /* loader -S */
 .df {display: flex}
@@ -23,7 +20,6 @@ body {
 }
 
 .loader h1 { font-weight: 800 !important; font-size: 100px !important; }
-.loader h2 { font-weight: 700 !important; font-size: 80px !important; text-align: center; }
 
 /* loader-superman-css -S */
 
@@ -275,19 +271,18 @@ body {
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
-    background-color: rgb(255, 230, 153);
   }
   
   #contents {
-    background-color: #130d0a;
+    background-color: rgb(255, 191, 0);;
   }
   
   /* myworld-svg-css */
 
 .myworld{
   width: 1000px; 
-  position: fixed;
-  bottom: 0; left: 50%;
+  position: fixed; z-index: -1;
+  bottom: 0; left: 960px;
   transform: translateX(-50%);
 }
 
@@ -456,25 +451,115 @@ body {
     z-index: -1;
   }
   
-  .first-section {
-    padding: 50px 0 20px 0;
+/* introduction -S */
+.introduction{ padding: 200px 0; }
+
+/* profile title svg -S */
+
+.mytitle { margin-bottom: 200px; }
+
+.svg-text {
+  width: 100%;
+  position: relative;
+  transform: rotateX(30deg);
+  font-size: 280px;
+  font-family: 'dragon_is_comingregular', serif;
+  transition: all 0.6s ease-in-out;
+  color: #f0f0f0;
+  cursor: default;
+}
+.svg-text__shaded {
+  text-shadow: 0 1px 1px rgba(33, 33, 33, 0.15), 0 3px 10px rgba(33, 33, 33, 0.15), 0 3px 20px rgba(33, 33, 33, 0.35);
+}
+.svg-text__shaded__sub {
+  font-size: .05em;
+  font-family: 'Open Sans', sans-serif;
+}
+.svg-text__shaded__stroke {
+  stroke-dasharray: 3em .5em;
+  stroke-dashoffset: 0;
+  transition: all 0.6s ease-in-out;
+  -webkit-animation: offsetAnim 4.2s ease-in-out infinite;
+          animation: offsetAnim 4.2s ease-in-out infinite;
+}
+.svg-text .bold {
+  font-size: .5em;
+  font-family: 'Kreon', sans-serif;
+  font-weight: 700;
+}
+
+.svg-text:hover .svg-text__shaded__stroke {
+  -webkit-animation: offsetAnim 4.2s ease-in-out infinite;
+          animation: offsetAnim 4.2s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes offsetAnim {
+  70%,
+    100% {
+    stroke-dashoffset: 3.5em;
   }
-  
-  .text-header {
-    font-size: 50px;
-    text-align: center;
+}
+
+@keyframes offsetAnim {
+  70%,
+    100% {
+    stroke-dashoffset: 3.5em;
   }
-  
-  h1 {
-    line-height: 120%;
-    margin-bottom: 30px;
-  }
-  
-  p {
-    color: #ede0d5;
-    font-size: 18px;
-    line-height: 150%;
-  }
-  
-  
+}
+
+/* profile title svg -E */
+/* introduction-box -S*/
+.introduction-box {display: flex;}
+.introduction-box figure { 
+  margin: 0px 86px 0px 157px;
+  width: 900px;
+}
+.introduction-box figure img { width: 100%;}
+.introduction-box div h1 { 
+  margin-bottom: 30px;
+  font-size: 38px; color: #000;
+}
+.introduction-box div p { font-weight: 600; font-size: 28px; line-height: 40px; color: #fff; }
+.introduction-box .me + .me {margin-top: 40px;}
+.intro-text-box { 
+  display: flex; 
+  width: 100%;
+}
+.intro-text-box .personal-box { margin-right: 60px; }
+.skill-box { width: 100%; }
+.my-skill{width: 100%;
+  display: flex;
+}
+.skill-detail { 
+  width: 60px; height: 60px;
+  background-image: url(../img/html.png); background-position: center center; background-repeat: no-repeat; background-size: contain;
+  animation: heartbeat 1.5s infinite;
+}
+.skill-detail + .skill-detail { margin-left: 20px; }
+.skill-detail:nth-child(2){background-image: url(../img/css.png);}
+.skill-detail:nth-child(3){background-image: url(../img/javascript.png);}
+.skill-detail:nth-child(4){background-image: url(../img/jquery.png);}
+.skill-detail:nth-child(5){
+  margin-left: 37px;
+  background-image: url(../img/photoshop.png);
+}
+.skill-detail:nth-child(6){
+  margin-left: 37px;
+  background-image: url(../img/illustrator.png);
+}
+.skill-detail:nth-child(7){background-image: url(../img/figma.png);}
+
+@keyframes heartbeat {
+  0% { transform: scale(1);}
+  50% { transform: scale(1.3);}
+  100% { transform: scale(1);}
+}
+
+/* introduction-box -E*/
+/* introduction -E */
+
+/* pizza -S */
+.pizza { background-color: #d4261f }
+/* pizza -E */
   

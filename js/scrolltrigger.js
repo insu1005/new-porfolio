@@ -1,4 +1,4 @@
-const images = gsap.utils.toArray('img');
+const images = gsap.utils.toArray();
 const updateProgress = (instance) =>
 loader.textContent = `${Math.round(instance.progressedCount * 100 / images.length)}%`;
 

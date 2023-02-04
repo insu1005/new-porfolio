@@ -1,7 +1,6 @@
 /* Insu-Song reset -S */
-html { 
-  min-width: 1800px; min-height: 1080px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap');
+
 html, body, div, span, h1, h2, h3, h4, h5, h6, p,  
 img, strong, ol, ul, li, fieldset, form, label, 
 legend footer, header, section {
@@ -10,6 +9,11 @@ legend footer, header, section {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+}
+body { 
+	min-width: 1800px; 
+	background-color: rgb(255, 230, 153);
+	font-family: 'Do Hyeon','Black Han Sans', sans-serif;
 }
 a, em { font: inherit; text-decoration: none; color: inherit;}
 ol, ul {
