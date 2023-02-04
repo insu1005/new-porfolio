@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <!-- bootstrap-modal -S -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css">    -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">   
     <!-- bootstrap-modal -E -->
     <!-- hover xeicon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -2744,8 +2744,8 @@
 </header>
 
 <main id="contents">
-  <div class="introduction">
-    <div class="mytitle">
+  <div class="introduction fix-size">
+    <h1 class="mytitle">
       <svg class="svg-text" width="1.5em" height="0.7em" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <symbol id="stroke-2">
@@ -2774,7 +2774,7 @@
           <use y="3%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill-2" fill="white"></use>
         </g>
       </svg>
-    </div>
+    </h1>
     <div class="introduction-box">
       <figure>
         <img src="img/profile-pic.jpg" alt="안녕하세요! IT 새로운 개척자 송인수 입니다!">            
@@ -2834,29 +2834,59 @@
       </div>
     </div>
   </div>
-  <div class="pizza">
-    <h1 class="tit">오구쌀 피자</h1>
+  <div class="pizza fix-size">
+    <h1 class="tit content-tit">오구쌀 피자</h1>
+    <div class="pizza-wrap contents-wrap">
+      <figure class="img-box">
+        <img src="img/intro-pizza.png" alt="안녕하세요 그누보드를 활용한 php혼합 커스텀 코딩입니다.">
+      </figure>
+      <div class="text-box">
+        <h2>오구쌀피자 RENEWAL</h2>
+        <strong>그누보드를 활용하여 회원가입 및 로그인, 콘텐츠 검색</strong>
+        <em>게시판 글쓰기와 답변쓰기 전반적인 홈페이지의 Full 기능 활성화</em>
+        <p>box-sizing borderbox에 관한 이해도를 부분 적용하였습니다</p>
+        <p>php를 활용한 커스텀 코딩입니다</p>
+      </div>     
+    </div>
+    <div class="connect">
+      <a href="" target="_blank">WEB</a>
+      <a href="#" data-toggle="modal" data-target="#web01">CONCEPT</a>
+      <a href="web/project2/pizza-songinsu.pptx" download="pizza-songinsu.pptx" data-toggle="modal">PROPOSAL</a>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="web01">
+      <div class="modal-dialog" style="width: 1030px;">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <img src="img/banner1.png" alt="">
+              </div>
+              <div class="modal-footer">
+                  <button class="btn btn-default" data-dismiss="modal">CLOSE</button>
+              </div>
+          </div>
+      </div>
+    </div>  
   </div>
-  <div class="deahan">
-    <h1 class="tit">대한전선</h1>
+  <div class="daehan fix-size">
+    <h1 class="tit content-tit">대한전선</h1>
   </div>
-  <div class="soma">
-    <h1 class="tit">소마 미술관</h1>
+  <div class="soma fix-size">
+    <h1 class="tit content-tit">소마 미술관</h1>
   </div>
-  <div class="figma">
-    <h1 class="tit">FIGMA</h1>
+  <div class="figma fix-size">
+    <h1 class="tit content-tit">FIGMA</h1>
   </div>
-  <div class="graphic">
-    <h1 class="tit">GRAPHIC</h1>
+  <div class="graphic fix-size">
+    <h1 class="tit content-tit">GRAPHIC</h1>
   </div>
-  <div class="dy">
-    <h1 class="tit">DYNAMIC</h1>
+  <div class="dy fix-size">
+    <h1 class="tit content-tit">DYNAMIC</h1>
   </div>
-  <div class="hover">
-    <h1 class="tit">HOVER</h1>
+  <div class="hover fix-size">
+    <h1 class="tit content-tit">HOVER</h1>
   </div>
-  <div class="responsive">
-    <h1 class="tit">REPONSIVE</h1>
+  <div class="responsive fix-size">
+    <h1 class="tit content-tit">REPONSIVE</h1>
   </div>
 </main>
 
@@ -2871,5 +2901,9 @@
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 <script src="js/scrolltrigger.js"></script>
 <!-- greensock -E -->
+<!-- bootstrap -S -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- bootstrap -E -->
 </body>
 </html>
