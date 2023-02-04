@@ -4,10 +4,10 @@
 h1, .tit { font: 60px 'Black Han Sans'; cursor: default;}
 .text-box h2 { 
   margin-bottom: 22px;
-  font-size: 60px; color: #fff; line-height: 90px;
+  font-size: 60px; line-height: 90px;
  }
-.text-box strong, em { display: block;}
-.text-box strong, em, p{ font-size: 30px; line-height: 36px;}
+.text-box strong, .text-box em { display: block;}
+.text-box strong, .text-box em, .text-box p{ font-size: 30px; line-height: 36px;}
 .connect { 
   display: flex; 
   margin-left: 1100px;
@@ -597,6 +597,10 @@ h1, .tit { font: 60px 'Black Han Sans'; cursor: default;}
   box-shadow: 0 0 20px #000;
 }
 .pizza-wrap .text-box { position: relative; }
+.pizza-wrap .text-box h2 { color: #fff; }
+.pizza-wrap .text-box strong { color: #ff0; }
+.pizza-wrap .text-box em { color: #ff0; }
+.pizza-wrap .text-box p { color: #ff0; }
 .pizza-wrap .text-box::before{ content: "";
   display: block;
   margin-bottom: 50px;
@@ -605,9 +609,9 @@ h1, .tit { font: 60px 'Black Han Sans'; cursor: default;}
   background-image: url(../img/brand-model.png);
 }
 .pizza-wrap .text-box::after{ content: "";
-  width: 741px; height: 337px;
-  background-image: url(../img/interior-removebg-preview.png);
-  position: absolute; right: -270px; top: 0;
+  width: 440px; height: 220px;
+  background-image: url(../img/interior-removebg-preview.png); background-size: cover;
+  position: absolute; right: -20px; top: 90px;
 }
 /* pizza -E */
 
