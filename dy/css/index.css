@@ -1,0 +1,467 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+/* reset -s */
+*{margin: 0; padding: 0;}
+a { text-decoration: none; color: inherit;}
+ul,ol {list-style: none;}
+html, body, main, section {    
+    width: 100%; height: 100%; min-width: 1500px;
+    font-family: 'Bungee', cursive;
+}
+.hidden { 
+    width: 0; height: 0;
+    font-size: 0; text-indent: -9999px;
+}
+header, nav, main, section, article, footer { display: block} 
+/* reset -e */
+/* header -s */
+header { 
+    width: 100%; min-width: 1500px;
+    color: #fff;
+    position: absolute; left: 0; top:0; z-index: 50;
+} 
+/* header-common -s */
+nav {    
+    width: 200px; height: 70px;
+    margin:38% 0 0 5%;
+    border: 5px solid #999; border-radius: 14px; 
+    font-size:25px; text-align: center;
+    background-image: url(../img/pattern.png);
+    position: absolute; left: 0; top: 0;
+}
+.move { 
+    width: 20px; height: 20px;
+    position: absolute; left: 0; top: -14px; 
+    animation: walking 4s infinite;
+}
+.wheel {
+    width: 100%; height: 100%;
+    background-image: url(../img/wheel.png); background-size: contain;
+    animation: circulation 0.4s infinite;
+}
+ul { 
+    width: 200px; height: 360px;
+    font-size: 22px;
+    position: absolute; left: -5px; top: -520%;
+    transition: all 0.3s; z-index: -1;
+}
+li {
+    border: 3px solid #fff; border-radius: 10px;
+    width: 200px; height: 58px;
+    background-image: url(../img/pattern.png);
+    position: absolute; left: 0; top:0;
+}
+li+li { margin-top: 10px;}
+li:nth-child(1) {
+    top:10px;
+    transform: translate(2px,360px);
+    transition: all 0.3s;
+    transition-delay: 1.1s;
+}
+li:nth-child(2) {
+    transform: translate(2px,360px);
+    transition: all 0.3s;
+    transition-delay: 0.9s;
+}
+li:nth-child(3) {
+    transform: translate(2px,360px);
+    transition: all 0.3s;
+    transition-delay: 0.7s;
+}
+li:nth-child(4) {
+    transform: translate(2px,360px);
+    transition: all 0.3s;
+    transition-delay: 0.5s;
+}
+li:nth-child(5) {
+    transform: translate(2px,360px);
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+}
+li a {
+    display: block;
+    width: 100%; height: 100%; 
+    border-radius: 10px; 
+    position: absolute; z-index: -110; 
+    overflow: hidden;
+}
+li a::after {content: "";
+    display: block;
+    width: 100%; height: 100%;
+    background-color: rgb(3, 3, 114); border-radius: 10px;
+    position: absolute; left: -200px; top: 0; z-index: -1;
+    transition: all 0.3s;
+    transition-delay: 0.1s;
+}
+li .sub-gate { 
+    position: absolute; left: 205px; top: -280px; z-index: -100;
+    transition: all 0.2s;
+}
+li .sub-gate::before {content: "";
+    display: block;
+    width: 46px; height: 58px;
+    background: url(../img/gate-left.png) 0 0/contain no-repeat;
+    position: absolute; left: -4px; top: 280px;
+    transition: all 0.3s;
+    transition-delay: 1s;
+}
+li .sub-gate::after {content: "";
+    display: block;
+    width: 46px; height: 58px;
+    background: url(../img/gate-right.png) 0 0/contain no-repeat;
+    position: absolute; left: 23px; top: 280px;
+    transition: all 0.2s;
+    transition-delay: 0.4s;
+}
+li .sub-engine { 
+    width: 200px; height: 58px;
+    border: 3px solid #fff; border-radius: 10px;
+    background-image: url(../img/pattern.png);
+    position: absolute; left: 15px; top: 278px; z-index: -30;
+    transform: scale(0); 
+    transition: all 0.2s;
+    transition-delay: 0.4s;
+}
+img {
+    width: 200px; height:180px;
+    background-size: contain ;
+    position: relative; bottom: 70px; 
+}
+li:hover .sub-engine { transform: scale(1);}
+li:hover .sub-gate::after { left:200px}
+.face { 
+    width: 235px; height: 230px;
+    background-image: url(../img/auto.png); background-size: cover;
+    position: absolute; left: -15px; top: -240px;
+    transition: all 0.3s;
+}
+.face::before { content: "";
+    width:68px; height:35px;
+    background-color: rgb(3, 3, 114);
+    position:absolute; left: 85px; top: 20px; z-index: -1;
+    transform: scale(0);
+    transition-delay: 1.7s;
+}
+.face::after { content: "";
+    width:140px; height:30px;
+    background-color: rgb(3, 3, 114);
+    position:absolute; left: 48px; top: 110px; z-index: -1;
+    transform: scale(0);
+    transition-delay: 1.7s;
+}
+
+/* header-common -e */
+.auto-bot .move { 
+    position: absolute; left: 190px; top: -14px; 
+    animation: walk 4s infinite;
+}
+.auto-bot li:nth-child(1) img{ 
+    width: 240px; height: 140px; 
+    left:-10px; bottom: 25px;
+}
+.auto-bot li:nth-child(2) img{ 
+    width: 130px; height: 170px; 
+    bottom: 25px;
+}
+.auto-bot li:nth-child(3) img{ 
+    width: 260px; height: 130px; 
+    left: -45px; bottom: 25px;
+}
+.auto-bot li:nth-child(4) img{ 
+    width: 120px; height: 130px; 
+    bottom: 40px;
+}
+
+.auto-bot li:hover a::after {left: 0;}
+.auto-bot:hover li:nth-child(1) {transform: translate(2px, -5px);}
+.auto-bot:hover li:nth-child(2) {transform: translate(2px, 65px);}
+.auto-bot:hover li:nth-child(3) {transform: translate(2px, 135px);}
+.auto-bot:hover li:nth-child(4) {transform: translate(2px, 205px);}
+.auto-bot:hover li:nth-child(5) {transform: translate(2px, 275px);}
+.auto-bot:hover .face { top: -580px;}
+.auto-bot:hover .face::after { transform: scale(1);}
+.auto-bot:hover .face::before { transform: scale(1);}
+
+.decepbot { margin:38% 0 0 83%;}
+.decepbot li a::after {content: "";
+    display: block;
+    width: 100%; height: 100%;
+    background-color: #f00;
+    position: absolute; left: 200px;top: 0; z-index: -1;
+    transition: all 0.3s;
+}
+.decepbot li:nth-child(1) img{ 
+    width: 400px; height: 400px; 
+    left: -120px; bottom: 70px
+}
+.decepbot li:nth-child(2) img{ 
+    width: 160px; height: 180px; 
+    bottom: 70px
+}
+.decepbot li:nth-child(3) img{ 
+    width: 160px; height: 180px; 
+    bottom: 70px
+}
+.decepbot li:nth-child(4) img{ 
+    width: 160px; height: 180px; 
+    bottom: 40px
+}
+.decepbot li:nth-child(5) img{ 
+    width: 190px; height: 180px; 
+    bottom: 40px;
+    transform: rotate(-10deg);
+}
+.decepbot .sub-gate { 
+    position: absolute; left: -238px; top: -280px; z-index: -100;
+    transition: all 0.2s;
+}
+.decepbot .sub-gate::before {content: "";
+    display: block;
+    width: 46px; height: 58px;
+    background: url(../img/gate-left.png) 0 0/contain no-repeat;
+    position: absolute; left: 166px; top: 280px;
+    transition: all 0.2s;
+    transition-delay: 0.4s;
+}
+.decepbot .sub-gate::after {content: "";
+    display: block;
+    width: 46px; height: 58px;
+    background: url(../img/gate-right.png) 0 0/contain no-repeat;
+    position: absolute; left: 200px; top: 280px;
+    transition: all 0.3s;
+    transition-delay: 1s;
+}
+.decepbot li:hover .sub-gate::before { left:-15px}
+.decepbot .face { 
+    width: 200px;
+    background-image: url(../img/decepticon.png); background-size: cover;
+    top: -240px;
+}
+.decepbot .face::before { content: "";
+    width:30px; height:35px;
+    background-color: #f00;
+    top: 60px;
+}
+.decepbot .face::after { content: "";
+    background-color: #f00;
+    left: 28px;
+}
+.decepbot li:hover a::after {left: 0;}
+.decepbot:hover li:nth-child(1) {transform: translate(2px, -5px);}
+.decepbot:hover li:nth-child(2) {transform: translate(2px, 65px);}
+.decepbot:hover li:nth-child(3) {transform: translate(2px, 135px);}
+.decepbot:hover li:nth-child(4) {transform: translate(2px, 205px);}
+.decepbot:hover li:nth-child(5) {transform: translate(2px, 275px);}
+.decepbot:hover .face { top: -580px;}
+.decepbot:hover .face::after { transform: scale(1);}
+.decepbot:hover .face::before { transform: scale(1);}
+/* header -e */
+/* main -s */
+.shadow { 
+    background-color: #000;
+}
+.gate { 
+    box-sizing: border-box;
+    width: 100%; height: 100%; min-width: 1500px;
+    padding-top: 20%;
+    font-size: 50px; color: #fff; text-align: center;
+    position: absolute; left: 0; top: 0; z-index: 20;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+.button-wrap { 
+    box-sizing: border-box;
+    padding-top: 2%;
+    width: 25%; height: 70%;
+    margin: 0 auto;
+    position: relative; z-index: 30;
+}
+.vibration { 
+    width: 300px; height: 300px;
+    margin: 0 auto;
+}
+.button { 
+    box-sizing: border-box;
+    width: 300px; height: 300px;
+    margin: 0 auto; padding-top: 39%;
+    background: url(../img/button-shape.png) center center /contain no-repeat; 
+    position: relative;
+    animation: heart-beat 2s infinite;
+    transition: all 0.7s;
+    transition-delay: 0.8s;
+}
+.eyes {
+    width: 25px; height: 25px; 
+    border-radius: 100%;
+    background: radial-gradient(rgb(255, 103, 14) 2px, rgb(0, 0, 0) 30%, rgb(245, 149, 93)60%);
+    position: absolute; left: 80px; top: 140px;
+    filter: blur(2px);
+    animation: eyes 1.3s infinite;
+    transition: all 1.4s;
+    transition-delay: 1.4s;
+}
+.eyes:nth-of-type(2) { left: 200px;}
+.top {
+    width: 170px; height: 120px;
+    background: url(../img/button-top.png) 0 0 /contain no-repeat; 
+    position: absolute; left: 65px; top: 15px;
+    transition: all 0.3s;
+    transition-delay: 1.7s;
+}
+.left-top {
+    width: 110px; height: 120px;
+    background: url(../img/left-top.png) 0 0 /contain no-repeat;
+    position: absolute; left: 20px; top: 25px;
+    transition: all 0.3s;
+    transition-delay: 1.4s;
+}
+.rigth-top {
+    width: 110px; height: 120px;
+    background: url(../img/right-top.png) 0 0 /contain no-repeat;
+    position: absolute; left: 170px; top: 25px;
+    transition: all 0.3s;
+    transition-delay: 1.4s;
+}
+.center {
+    width: 100px; height: 120px;
+    background: url(../img/center.png) 0 0 /contain no-repeat;
+    position: absolute; left: 129px; top: 85px;
+    transition: all 0.3s;
+    transition-delay: 1.4s;
+}
+.left-bottom {
+    width: 130px; height: 130px;
+    background: url(../img/left-bottom.png) 0 0 /contain no-repeat;
+    position: absolute; left: 38px; top: 125px;
+    transition: all 0.3s;
+    transition-delay: 1.4s;
+}
+.right-bottom {
+    width: 130px; height: 130px;
+    background: url(../img/bottom-right.png) 0 0 /contain no-repeat;
+    position: absolute; left: 210px; top: 125px;
+    transition: all 0.3s;
+    transition-delay: 1.4s;
+}
+.center-bottom {
+    width: 142px; height: 120px;
+    background: url(../img/center-bottom.png) 0 0 /contain no-repeat;
+    position: absolute; left: 104px; top: 145px;
+    transition: all 0.3s;
+    transition-delay: 1.4s;
+}
+.bottom {
+    width: 50px; height: 50px;
+    background: url(../img/bottom.png) 0 0 /contain no-repeat;
+    position: absolute; left: 125px; top: 230px;
+    transition: all 0.3s;
+    transition-delay: 1.7s;
+}
+.title { 
+    width: 511px; height: 66px;
+    background-image: url(../img/title.png); background-position: center center;
+    text-indent: -9999px;
+    position: absolute; left: -35%; top: 40%; z-index: 40;
+    transform: scale(0); 
+    transition: all 0.7s;
+    transition-delay: 1.9s;
+}
+.autobot{
+    width: 50%; height: 100%;
+    background:#000 url(../img/autobot-bg.png) right top /contain no-repeat ; 
+    position: absolute; left: -50%; top: 0; z-index: 1;
+    transition: all 0.3s;
+    
+}
+.decepticon{
+    width: 50%; height: 100% ;
+    background:#000 url(../img/decepticon-bg.png) left top /contain no-repeat ;
+    position: absolute; left: 100%; top: 0; z-index: 1;
+    transition: all 0.3s;
+}
+.bg { 
+    width: 50%; height: 100%;
+    background: url(../img/auto-blue.png) 0 0/cover no-repeat;
+    position: absolute; left: -50%; top: 0; z-index: 5;
+    transition: all 0.3s;
+    transition-delay: 0.8s;
+}
+.bg:nth-of-type(4) { 
+    width: 50%; height: 100%;
+    background-image: url(../img/auto-red.png);
+    position: absolute; left: 100%; top: 0;
+}
+.transformer-movie { 
+    width: 100%; height: 100%;
+    opacity: 0.2;
+}
+.button-wrap:hover .vibration { animation: heart-blood 0.1s;}
+.button-wrap:hover .button { animation: heart-beat 0;}
+.button-wrap:hover ~ .bg { left: 0;} 
+.button-wrap:hover ~ .bg:nth-of-type(4) { left: 50%;} 
+.button-wrap:hover ~ .autobot {left: 0;}
+.button-wrap:hover ~ .decepticon { left:50%;}
+.button:hover { transform: scale(1.4); }
+.button:hover .eyes { 
+    background: radial-gradient(rgb(255, 103, 14) 2px, rgb(255, 162, 2) 30%, rgb(245, 149, 93)60%);
+    top: 30px;
+}
+.button:hover .top{ top: -90px; }
+.button:hover .left-top{ left: -50px ; top: -50px;}
+.button:hover .rigth-top{ left: 240px;top: -50px; }
+.button:hover .center{ top: -20px; }
+.button:hover .left-bottom{ left: 0; top: 230px; }
+.button:hover .right-bottom{ left: 248px; top: 230px; }
+.button:hover .center-bottom{ top: 280px; }
+.button:hover .bottom{ top: 380px; }
+.button:hover .title { transform: scale(1.3);} 
+
+/* main -e */
+/* footer -s */
+footer {
+    width: 100%; min-width: 1500px;
+    color: #fff;text-align: center;
+    position: absolute; left: 0; bottom: 0;
+}
+/* footer -e */
+/* animation -s */
+@keyframes heart { 0%{transform: rotate(360deg);}}
+@keyframes heart-beat { 
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+@keyframes heart-blood {
+    0% {transform: rotate(0);}
+    35% {transform: rotate(4deg);}
+    70% {transform: rotate(-4deg);}
+    100% {transform: rotate(0);}
+}
+@keyframes circulation { 
+    0% { transform: rotate(0);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg); }
+    75% {transform: rotate(270deg);}
+    100% { transform: rotate(360deg);}
+}
+@keyframes walk {
+    0% { transform: translate(0,0);}
+    25% {transform: translate(-200px,0);}
+    50% {transform: translate( -200px, 75px); }
+    75% {transform: translate( 0,75px);}
+    100% { transform: translate(0,0);}
+}
+@keyframes walking {
+    0% { transform: translate(0,0);}
+    25% {transform: translate(190px,0);}
+    50% {transform: translate( 190px, 75px); }
+    75% {transform: translate(-14px,75px);}
+    90% { transform: translate(-14px,0);}
+    100% { transform: translate(0,0);}
+}
+@keyframes eyes { 
+    0%{ box-shadow: 0 0 0 rgb(255, 102, 0);}
+    50%{ box-shadow: 0 0 30px rgb(255, 102, 0);}
+    100%{ box-shadow: 0 0 0 rgb(255, 102, 0);}
+}
+/* animation -e */

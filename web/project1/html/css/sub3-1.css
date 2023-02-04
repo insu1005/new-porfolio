@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+.visual { background-image: url(../img/sub3-1-img/visual.png);}
+
+/* main -S */
+/* park sec -S */
+.park-box-img {margin-bottom: 90px;}
+.park-description { 
+    width: 900px;
+    font-size: 16px; line-height: 24px; color: #555;
+}
+.park-description em {display:block; padding: 36px 0 36px;}
+/* park sec -E */
+
+/* jogak-park sec -S*/
+.jogak-img { 
+    float: left;
+    margin-right: 30px;
+}
+.mark-box { 
+    float: left;
+    width: 600px;
+}
+.common-box + .common-box { margin-top: 41px; }
+.common-tit { 
+    display: inline-block;
+    width: 118px; height: 43px;
+    margin-right: 24px; padding-left: 20px;
+    border: 2px solid #c1c1c1; border-radius: 20px;
+    font-size: 16px; line-height: 43px; color: #555;
+}
+.common-tit::after { content: "";
+    display: inline-block;
+    width: 12px; height: 16px;
+    margin-left: 10px;
+    background-image: url(../img/sub3-1-img/marker.png);
+}
+.common-box:nth-child(2) > .common-tit::after { background-position: -12px;}
+.common-box:nth-child(3) > .common-tit::after { background-position: -24px;}
+.common-box:nth-child(4) > .common-tit::after { background-position: -36px;}
+.common-box:nth-child(5) > .common-tit::after { background-position: -48px;}
+.common-description {
+    display: inline-block;
+    width: 414px;
+    font-size: 16px; line-height: 43px; color: #555;
+}
+
+.common-box:nth-child(2) div, .common-box:nth-child(4) div, .common-box:nth-child(5) div{ vertical-align: top;}
+/* jogak-park sec -E*/
+
+/* tour-guide sec -S */
+.tour-img { margin-bottom: 50px;}
+.tour-img p {float: left;}
+.tour-img p:first-child { margin-right: 70px;}
+.tour-sub-tit {
+    float: left;
+    width: 130px;
+    margin-right: 60px;
+    font-weight: 500; font-size: 24px; line-height: 38px; color: #555;
+}
+.tour-sub-description {
+    float: left;
+    width: 1020px;
+    font-size: 16px; line-height: 20px; color: #555;
+}
+.tour-sub-description strong { 
+    display: block;
+    margin-bottom: 28px;
+    font-weight: 500; color: #f47e33;
+}
+.tour-sub-description em {
+    display: inline-block;
+    margin-bottom: 28px;
+}
+/* tour-guide sec -E */
+
+/* audio-tour sec -S */
+/* infographic common -S */
+.infographic { 
+    width: 895px; height: 483px;
+    margin-bottom: 70px; padding: 4px;
+    border: 3px solid #fe8443; border-radius: 20px;
+}
+.line1 {
+    width: 876px; height: 465px;
+    padding: 1px;
+    border: 9px solid #fe8443; border-radius: 20px;
+}
+.line2 {
+    width: 807px; height: 430px;
+    padding: 16px 0 0 51px;
+    border: 9px solid #fd8a69; border-radius: 13px;
+}
+.line2 > p {
+    margin-bottom: 52px;
+    font-weight: 700; font-size: 24px; line-height: 30px; color: #fd6f22;
+}
+.info-tit { 
+    width: 778px; height: 71px;
+    margin-bottom: 7px;
+    font-weight: 900; font-size: 40px; color: #fd6f22; line-height: 74px; text-indent: 5px;
+    border-top: 4px solid #fd6918; border-bottom: 2px solid #fead82;
+}
+.info-tit strong {
+    float: right;
+    width: 93px; height: 24px;
+    margin-top: 25px;
+    border: 1px solid #fd9580; border-radius: 20px;
+    font-weight: 700; font-size: 14px; line-height: 24px; text-align: center;
+    vertical-align: center;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+.line2 > ul strong { 
+    display: block;
+    margin-bottom: 51px;
+    font-weight: 700; font-size: 13px; line-height: 17px; color:#fd6c1c;
+}
+.line2 li { 
+    float: left;
+    width: 213px; height: 213px;
+    margin-left: 53px;
+    border: 2px solid #fd752a; border-radius: 100%;
+    background-color: #feccbe;
+    position: relative;
+}
+.line2 li+li { margin-left: 16px;}
+.line2 > ul li strong {
+    display: inline-block;
+    width: 47px; height: 47px;
+    border: 2px solid #fc4a26; border-radius: 100%;
+    font-size: 19px; line-height: 46px; text-align: center;
+    background-color: #feccbe;
+}
+.half-circle {
+    width: 166px; height: 58px;
+    margin: 0 auto; padding-top: 26px;
+    border: 2px solid #fd6e20; border-radius: 100px 100px 0 0;
+    background-color: #fff;
+    position: absolute; left: 21px; top: 22px;
+} 
+.icon {
+    width: 45px; height: 38px;
+    margin: 0 auto;
+    background-image: url(../img/sub3-1-img/inforgrafic-icon.png);
+    text-align: center;
+    vertical-align: center;
+}
+.circle-description { 
+    margin-top: 20px;
+    text-align: center;
+}
+.circle-description h6 {
+    margin-bottom: 5px;
+    font-weight: 700; font-size: 20px; line-height: 24px; color: #fc4f2c;
+}
+.circle-description p { font-size: 14px; line-height: 20px; color: #fd9b85;}
+.info-tit strong:hover { 
+    color:#fff;
+    background-color:#f47e33;
+}
+/* infographic common -E */
+/* infographic -S */
+.line2 li:nth-of-type(2) { background-color: #eeeeee;}
+.line2 li:nth-of-type(2) strong { background-color: #eeeeee;}
+.line2 li:nth-of-type(2) .icon { background-position: -45px;}
+.line2 li:nth-of-type(3) .icon { background-position: -90px;}
+/* inforgraphic -E */
+.audio-description { margin-bottom: 75px;}
+.audio-sub-tit{
+    float:left;
+    margin-right: 60px;
+    font-weight: 500; font-size: 24px; line-height: 28px; color: #555;
+}
+.audio-sub-description {
+    float: left;
+    width: 850px;
+    font-size: 16px; line-height: 20px; color: #555;
+}
+.audio-list li {
+    width: 957px; height: 90px;
+    padding:0 68px 0 25px;
+    font-weight: 700; font-size: 16px; line-height: 90px; color: #333;
+    background-color: #fdd9c1;
+}
+.audio-list li+li {margin-top: 20px;}
+.audio-list a {
+    float: right;
+    display: block;
+    width: 131px;
+    margin-top: 20px; padding-left: 20px;
+    border: 2px solid #f47e34; border-radius: 20px;
+    font-weight: 500; font-size: 24px; line-height: 46px; color: #f47e33;
+    transition: all 0.7s;
+}
+.audio-list a::before{content: "";
+    display: inline-block;
+    width: 20px; height: 14px;
+    margin-right: 10px;
+    background-image: url(../img/sub3-1-img/icon_hpn_off.png);
+    transition: all 0.7s;
+}
+.audio-list a:hover {
+    color: #fff;
+    background-color: #f47e33;
+}
+.audio-list a:hover::before { background-image: url(../img/sub3-1-img/icon_hpn_off-w.png);}
+/* audio-tour sec -E */
+/* main -E */

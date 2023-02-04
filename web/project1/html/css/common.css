@@ -1,0 +1,307 @@
+@charset "UTF-8";
+/* notosan kr font-family -S */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* notosan kr font-family -E */
+/* pretendard font-family -S */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+/* pretendard font-family -E */
+
+/* skip-nav -S */
+.skip-nav-tit{ 
+  width: 100%; height: 30px; 
+  text-align: center; line-height: 30px; color:#fff; 
+  background-color: #f47e33;
+  position: absolute; left: 0; top: -100px; z-index: 20;
+}
+.skip-nav-tit:focus{top: 0;}
+/* skip-nav -E */
+
+/* common -S */
+body { font: 16px/1 'Noto Sans KR','돋움',dotum, AppleGothic, sans-serif; color: inherit; letter-spacing: -1px;}
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+}
+.hidden{  
+  display: none;
+  width: 0;height: 0; 
+  font-size: 0; line-height: 0; text-indent: -9999px;
+  position: absolute; left: -9999px; top:0;
+  overflow: hidden;
+}
+.clearfix::after {
+  content: ""; 
+  display: block; 
+  clear: both;
+}
+/* common -E */
+
+/* header -S */
+.header{ 
+  width: 100%; height: 73px; min-width: 1280px;
+  padding-top: 36px;
+  position: absolute; left: 0; top: 0; z-index: 10;
+}
+.logo{ 
+  width: 150px; height: 45px; 
+  margin-right: 134px;
+  float: left;
+}
+.logo a{ 
+  display:block; 
+  width: 100%; height: 45px;
+  text-indent: -9999px;
+  background-image: url(../img/logo.png);
+  transition: all 0.7s;
+}
+
+/* gnb -S */
+.gnb { float: left;}
+.gnb-tit { 
+  display:none; 
+  width: 293px; height: 250px; 
+  margin-left:-640px; 
+  background-color: #f47e33 ; 
+  position: absolute; left: 50%; top:90px; 
+  transition: all 0.7s;
+}
+.gnb-tit dt{ 
+  font-size: 20px; color: #fff; 
+  position: absolute; left: 122px; top: 193px;
+}
+.gnb-tit dd{ 
+  width:214px; height: 160px; 
+  margin: 20px 0 0 60px; 
+  text-indent: -9999px; 
+  background-image: url(../img/gnb-hover-img.png); 
+}
+.gnb .depth1 { float: left;}
+.gnb .depth1 > a{ 
+  display: block; 
+  height: 55px; 
+  padding: 0 43px; 
+  font-size: 17px; line-height: 55px; color: #fff;
+  transition: all 0.7s;
+}
+.gnb .depth1 .depth2{ 
+  display: none; 
+  height: 249px;
+  color: #555;
+}
+.gnb .depth1 .depth2 a { 
+  display: block; 
+  line-height: 36px; text-indent: 40px;
+  transition: all 0.7s;
+}
+.gnb:before {
+  content: ""; 
+  display: none; 
+  width:100%; height: 90px; 
+  background-color: #fff; 
+  position: absolute; left: 0; top: 0; z-index: -20; 
+  transition: all 0.7s;
+}
+.gnb:after {
+  content: ""; 
+  display: none; 
+  width:100%; height: 250px; 
+  background-color: #f5f5f5; 
+  position: absolute; left: 0; top: 90px; z-index: -20; 
+  transition: all 0.7s;
+}
+/* gnb -E */
+
+/* tnb -S */
+.tnb {
+  float: right; 
+  width: 115px;
+}
+.tnb-menu {
+  float: left; 
+  margin-right: 18px;
+}
+.tnb-menu > a { transition: all 0.7s;}
+.tnb-search-wrap { 
+  display: none;
+  width:100%; height: 133px; 
+  padding-top: 71px;
+  background-color: #fff; 
+  position:absolute; left: 0; top: 91px;
+}
+.tnb-search-box{ 
+  height: 65px; 
+  margin-bottom: 25px; 
+  text-align: center; 
+  background-color: #d5d5d5;
+}
+.tnb-search-box fieldset{line-height: 65px;}
+legend{ 
+  width: 0; height:0; 
+  text-indent: -9999px;
+}
+label{ 
+  font-size: 0;/* text-indent -9999 적용시 기능이 작동 안함 폰트 사이즈 0으로 대체 */
+  text-indent: -9999px;
+}
+.tnb-search-box fieldset > input{ 
+  width: 1000px; height: 40px; 
+  border: 0px solid #000;
+  background-color: #d5d5d5;
+}
+input::placeholder{  font-weight: 300; font-size: 26px; line-height: 40px; text-align: center;}
+.tnb-search-box fieldset > button{ 
+  width: 29px; height: 29px; 
+  border: 0px; 
+  text-indent: -9999px;
+  background: #d5d5d5 url(../img/search-box-img.png); 
+  position: relative; left: 0; top: 2px; 
+  cursor: pointer;
+}
+.tnb-search-recom{ text-align: center; }
+.tnb-search-recom > p{ display: inline-block; margin-right: 33px;}
+.tnb-search-recom-box {
+  display: inline-block; 
+  padding-bottom: 6px; 
+  font-size: 16px; line-height: 20px; color: #777;  
+}
+.tnb-search-recom-box li{ float: left;}
+.tnb-search-recom-box li+li{ margin-left: 20px;}
+.tnb > a { color: #fff; transition: all 0.7s;}
+/* tnb -E */
+
+/* header hover -S */
+.header:hover .logo a { 
+  width: 150px; height: 45px; 
+  background-position: 0 -45px;
+}
+.header:hover .tnb > a { 
+  color:#999;
+  opacity: 0.7;
+}
+.header:hover .tnb-menu > a { 
+  color:#999; 
+  opacity: 0.8; 
+}
+
+/* tnb search hover -S */
+.tnb-menu > a:hover + .tnb-search-wrap { display: block;}
+/* tnb search hover -E */
+/* header hover -E */
+
+/* gnb hover -S */
+.gnb:hover .gnb-tit { display:block;}
+.gnb:hover .depth1 .depth2{ display:block;}
+.gnb:hover:before{ display: block;}
+.gnb:hover:after{ display: block;}
+.gnb:hover .depth1> a { color:#333}
+.gnb .depth1:hover > a { color:#f47e33;}
+.gnb .depth2 a:hover { color: #f47e33;}
+/* gnb hover -E */
+/* header -E */
+
+/* footer -S */
+.footer{ 
+  width: 100%; height: 170px; min-width: 1280px; 
+  padding-top: 80px;
+  background-color: #333;
+}
+.f-logo { 
+  float: left;
+  width: 150px; height: 45px; 
+  margin-right: 46px;
+  background-image: url(../img/logo.png); background-position: 0 45px;
+  text-indent: -9999px; 
+}
+.f-menu { 
+  float: left;
+  margin:0 30px 20px 0;
+  font-size: 14px; line-height: 18px; color: #999;  
+}
+.f-menu li { 
+  float: left;
+  padding: 0 16px; 
+  border-left: 1px solid #999; 
+}
+.f-menu li:nth-child(1) { 
+  float: left;
+  padding: 0 16px 0 0; 
+  border-left: 0; 
+}
+.f-family { 
+  float: right;
+  width: 257px;   
+}
+.f-sns { float: right;}
+.f-sns li { 
+  float: left;
+  width: 19px; height: 20px; 
+}
+.f-sns li+li { margin-left: 10px;}
+.f-sns li:first-child { margin-left: 0;}
+.f-sns li:nth-child(2) { width:30px;}
+.f-sns li a { 
+  display: block; 
+  width: 19px; height: 20px; 
+  text-indent: -9999px; 
+  background-repeat: no-repeat;
+}
+.f-sns li > a { background-image: url(../img/f-sns.png);}
+.f-sns li:nth-child(2) > a { 
+  width: 100%;
+  background-position: -20px 0;
+}
+.f-sns li:nth-child(3) > a { background-position: -49px 0;}
+.f-sns li:nth-child(4) > a { background-position: -69px 0;}
+.f-sns li:nth-child(5) > a { background-position: -89px 0;}
+.f-banner { 
+  width: 88px; height: 63px; 
+  margin: 52px 0 0 30px; 
+  font-size: 0; 
+  background-image: url(../img/web-approach.png);
+}
+.f-site { 
+  float: right; 
+  position: relative; top: -80px;
+}
+.f-site p { 
+  width: 114px; height: 18px; 
+  border: 1px solid #777; 
+  font-size: 14px; line-height: 18px; color: #777; text-indent: 12px;
+  background-color: #fff; 
+  cursor: pointer;
+}
+.f-site p{ position: relative;}
+.f-site p:after{
+  content:""; 
+  display: block; 
+  width:13px; height:6px; 
+  background-image: url(../img/f-site-arrow.png);
+  position: absolute; top: 5px; left: 95px;
+}
+.f-site-box {
+  display: none;
+  width: 114px;
+  border: 1px solid #777;
+  text-indent: 12px;
+  background-color: #f5f5f5;
+  position: absolute; left: 0; top: -481px; 
+}
+.f-site-depth1 {
+  width: 100%;
+  font-size: 14px; line-height: 32px; color: #777; 
+}
+.f-site .f-site-box .f-site-depth1 span {
+  display: block;
+  height: 32px;
+  font-weight: 700;
+}
+.f-site .f-site-box .f-site-depth2 a {
+  display: block;
+  height: 32px;
+}
+.f-site-depth2 a:hover { background-color: #d5d5d5;}
+.f-copy { float: left;}
+.f-copy li { font-size: 14px; line-height: 25px; color: #777;}
+.f-copy-copy { font-size: 14px; line-height: 18px; color: #555; }
+.f-site:hover .f-site-box{ display: block;}
+/* footer -E */

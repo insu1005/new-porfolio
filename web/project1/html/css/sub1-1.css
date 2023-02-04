@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+.visual { background-image: url(../img/sub1-1-img/visual.png);}
+
+/* main -S */
+/* mission-vision sec-S */
+.mission-vision-box{ 
+    padding: 100px 0 100px; 
+    border: 1px solid rgba(204, 204, 204, 0.7);
+}
+.common-box { 
+    width: 556px; height: 176px; 
+    margin: 0 auto 50px; 
+    border-bottom: 1px solid rgba(204, 204, 204, 0.7);
+}
+.common-box:nth-child(2) { 
+    margin-bottom: 95px;
+    border-bottom: 0;
+}
+.mission-vision-tit { 
+    width: 180px; height: 70px; 
+    margin: 0 auto 30px; 
+    border-radius: 8px; 
+    font-weight: 700; font-size: 24px; line-height: 70px; color: #f47e33; text-align: center; 
+    background-color: #e0dfdf;
+}
+.mission-vision-description { font-size: 24px; line-height: 28px; color: #555;}
+.mission-vision-sub-box { margin: 0 auto; }
+.common-item { 
+    float: left;
+    width: 504px; height: 134px; 
+    margin-left: 90px; padding-top: 28px; 
+    border: 1px solid rgba(204, 204, 204, 0.7); border-top: 3px solid #f47e33; 
+}
+.common-item:nth-child(2) { 
+    border: 1px solid rgba(204, 204, 204, 0.7); border-top: 3px solid #777;
+}
+.common-item-tit{ 
+    margin-bottom: 30px; 
+    font-weight: 700; font-size: 24px; color: #333; text-align: center;
+}
+.common-item-description { font-size: 16px; color: #555; line-height: 24px; text-align: center; }
+/* mission-vision sec-E */
+
+/* landscape sec -S*/
+.landscape-box p { font-size: 16px; line-height: 30px; color: #777;}
+.landscape-box p + p { margin-top: 30px;}
+.landscape-box p:nth-child(1) { width: 695px; height:490px;}
+/* landscape sec -E*/
+
+/* mi sec -S*/
+.mi-box {
+    width: 924px; height: 199px; 
+    padding: 30px 0 0 33px;
+    border:1px solid rgba(204, 204, 204, 0.7);
+}
+.mi-box > p { 
+    float: left;
+    margin-right: 27px; 
+}
+.mi-box > .mi-description { 
+    float: left;
+    font-size: 16px; line-height: 30px; color: #777; 
+}
+.mi-description p+p { margin-top: 30px;}
+/* mi sec -E*/
+
+/* word-mark sec -S */
+.word-mark-box {
+    width: 924px; height: 298px; 
+    padding: 30px 0 0 33px;
+    border:1px solid rgba(204, 204, 204, 0.7);
+}
+.word-mark-box > p { 
+    float: left;
+    margin-right: 27px; 
+}
+.word-mark-box > .word-mark-description { 
+    float: left;
+    font-size: 16px; line-height: 30px; color: #777;
+} 
+.word-mark-description p+p { margin-top: 30px;}
+/* wodr-mark sec -E */
+
+/* location sec -S*/
+.location-box{ 
+    padding: 80px 0 70px;
+    border: 1px solid rgba(204, 204, 204, 0.7);
+}
+.location-box > .hidden1 { 
+    width: 760px; height: 330px;
+    margin: 0 auto 37px;
+    font-size: 0;
+}
+.location-description { text-align: center;}
+.location-description p { font-size: 24px; line-height: 30px; color: #333; text-indent: 80px;}
+.location-description span { 
+    display: inline-block; 
+    font-size: 24px; line-height: 30px; color: #555; text-indent: 80px;
+}
+.location-description span:nth-of-type(2) { text-indent: 40px;}
+/* location sec -E*/
+
+/* parking sec -S */
+.parking-common {  
+    width: 850px ; height: 179px; 
+    margin-bottom: 50px; 
+    border: 1px solid  rgba(204, 204, 204, 0.7);
+}
+.parking-common:before {content:""; 
+    float: left;  
+    display:block; 
+    width: 78px; height: 66px; 
+    margin: 56px 0 0 71px;
+    background-image: url(../img/sub1-1-img/transportation.png); 
+}
+.parking-content { 
+    float: left;
+    margin: 25px 0 0 41px; 
+}
+.parking-content-tit{ 
+    display: inline-block; 
+    margin-bottom: 20px; 
+    font-weight: 700; font-size: 24px; color: #f47e33;
+}
+.parking-content-description > p {  
+    font-size: 24px; line-height: 30px; color: #555; 
+}
+.parking-common:nth-child(2):before { content:""; 
+    float: left;
+    display:block; 
+    background-position: -78px 0; 
+}
+/* parking sec -E */
+
+/* trasportation sec container -S */
+.transportation-common{ 
+    width: 1059px; height: 330px; 
+    border: 1px solid rgba(204, 204, 204, 0.7);
+}
+.transportation-common:first-child{ margin-bottom: 50px;}
+.trans-common-tit { 
+    float: left;
+    margin: 80px 61px 0 63px; 
+    font-weight: 700; font-size: 24px; color: #f47e33; text-align: center; 
+}
+.trans-common-tit:after{ content: ""; 
+    display: block; 
+    width: 78px; height: 66px; 
+    margin: 10px auto 0; 
+    background-image: url(../img/sub1-1-img/transportation.png);
+}
+.common-direction { 
+    float:left;
+    padding-top: 45px;
+}
+.common-direction-tit {
+    margin-bottom: 30px;
+    font-weight: 500; font-size: 24px; color: #555;
+}
+.common-direction-desc > p { 
+    float: left;
+    color: #555; 
+    position: relative; 
+}
+.common-direction-desc strong { 
+    display: inline-block; 
+    text-indent: -42px;
+}
+.common-direction p:nth-child(3) strong { color: #0000ff;}
+.common-direction p:nth-child(4) strong { color: #00ff00;}
+.common-direction p:nth-child(5) strong { color: #00ff00;}
+.common-direction-desc > p:first-child { margin-left: 63px;}
+.common-direction-desc > p+p { margin-left: 80px;}
+.common-direction-desc > p:before { content: ""; 
+    display: block; 
+    width: 47px; height:46px; 
+    border: 2px solid #555; border-radius: 100% ; 
+    font-size: 24px; line-height: 46px; text-align: center; 
+    position: absolute; left: -60px; top: -15px;
+} 
+.transportation-common p:nth-child(3):before {content: ""; 
+    display: block; 
+    width: 47px; height:46px; 
+    border: 2px solid #0000ff; border-radius: 100% ; 
+    font-size: 24px; line-height: 46px; color: #0000ff; text-align: center; 
+    position: absolute; left: -60px; top: -15px;
+} 
+.transportation-common p:nth-child(4):before { content: ""; 
+    display: block; 
+    width: 47px; height:46px; 
+    border: 2px solid #00ff00; border-radius: 100% ; 
+    font-size: 24px; line-height: 46px; color: #00ff00; text-align: center; 
+    position: absolute; left: -60px; top: -15px;
+} 
+.transportation-common p:nth-child(5):before { content: ""; 
+    display: block; 
+    width: 47px; height:46px; 
+    border: 2px solid #00ff00; border-radius: 100% ; 
+    font-size: 24px; line-height: 46px; color: #00ff00; text-align: center; 
+    position: absolute; left: -60px; top: -15px;
+} 
+.bus-direction-olympic {margin-top: 45px;}
+.transportation-common:nth-child(2) .trans-common-tit:after{ content: ""; 
+    display: block; 
+    background-position: -156px 0;
+}
+.transportation-common:nth-child(2) strong { text-indent: -38px;}
+.subway-direction-mongchon strong { color:#ff7de2;}
+.subway-direction-hanseong strong { color:#ffc81f;}
+
+.transportation-common:nth-child(2) p:before { content: ""; 
+    display: block; 
+    width: 47px; height:46px;     
+    border: 2px solid #ff7de2; border-radius: 100% ; 
+    font-size: 24px; line-height: 46px; color: #ff7de2; text-align: center; 
+    position: absolute; left: -60px; top: -15px;
+}
+.subway-direction-hanseong {margin-top: 80px;}
+.transportation-common:nth-child(2) .subway-direction-hanseong p:before { content: ""; 
+    display: block; 
+    width: 47px; height:46px;     
+    border: 2px solid #ffc81f; border-radius: 100% ; 
+    font-size: 24px;  line-height: 46px; color: #ffc81f; text-align: center; 
+    position: absolute; left: -60px; top: -15px;
+}
+/* trasportation sec container -E */
+/* main -E */

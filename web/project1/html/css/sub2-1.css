@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+.visual {background-image: url(../img/sub2-1-img/visual.png);}
+
+/* main common -S */
+.common-img {
+    float: left;
+    width: 247px; height: 345px;
+    margin-right: 47px;
+}
+.common-tit { 
+    margin-bottom: 45px; padding-top: 50px;
+    font-weight: 700; font-size: 24px; line-height: 40px; color: #333;}
+.common-description { float: left;}
+.common-description strong, .common-description em, .common-description p { font-weight: 500; line-height: 40px; color:#555;}
+.common-description em { display: block;}
+/* main common -E */
+
+/* main -S */
+.into-drawing {margin-bottom: 130px;}
+/* infographic -S */
+/* infographic common -S */
+.info-list li {
+    float: left;
+}
+.info-list li + li { margin-left: 100px;}
+.circle { 
+    width: 90px; height: 90px;
+    margin: 0 auto;
+    border: 6px solid #f4982f; border-radius: 100%;
+    background-color: #fff;
+    font-size: 33px; line-height: 90px; text-align: center;
+    position: relative; left: 0; top: 60px;
+    box-shadow: 0 2px 3px #555;
+}
+.shape {
+    width: 152px; height: 109px;
+    padding-top: 67px;
+    border: 8px solid #eeeeee; border-radius: 20px;
+    background-color: #f49832;
+}
+.shape-box {
+    width: 134px; height: 76px;
+    margin: 0 auto;padding-top: 15px;
+    border-radius: 0 0 20px 20px;
+    background-color: #fff;
+}
+.shape-box::before{content: "";
+    display: block;
+    width: 67px; height: 65px;
+    margin: 0 auto;
+    background-image: url(../img/sub2-1-img/infographic.png);
+}
+.tail { 
+    width: 22px; height: 27px;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    background-color: #eeeeee;
+}
+.tail2 { 
+    width: 6px; height: 13px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+}
+.meaning {
+    width: 168px; height: 50px;
+    margin-bottom: 30px;
+    font-size: 24px; line-height: 50px; color: #fff; text-align: center;
+    background-color: #f4982f;
+}
+.meaning-description {text-align: center;}
+/* infografic common -E */
+.info-list li:nth-child(2) .circle { border-color: #ffcc66;}
+.info-list li:nth-child(2) .shape { background-color: #ffcc66;}
+.info-list li:nth-child(2) .shape-box::before { background-position: -67px 0;}
+.info-list li:nth-child(2) .meaning { background-color: #ffcc66;}
+.info-list li:nth-child(3) .shape-box::before { background-position: -134px 0;}
+.info-list li:nth-child(4) .circle { border-color: #fcc02f;}
+.info-list li:nth-child(4) .shape { background-color: #fcc02f;}
+.info-list li:nth-child(4) .meaning { background-color: #fcc02f;}
+.info-list li:nth-child(4) .shape-box::before { background-position: -201px 0;}
+/* infographic -E */
+/* history sec -S */
+.history img { margin-bottom: 90px;}
+.history-tit { 
+    margin-right: 140px;
+    font-size: 24px; line-height: 34px; 
+    float: left;
+}
+.history-tit strong { color:#f49832}
+.history-description { 
+    line-height: 30px;
+    float: left;
+}
+.history-description strong {
+    display: block;
+    margin-bottom: 30px;
+}
+.history-description em {
+    display: block;
+    margin-bottom: 30px;
+}
+.history-description p { margin-bottom: 30px;}
+/* history sec -E */
+/* main -E */

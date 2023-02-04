@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, em, img, strong, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+a { text-decoration: none; font: inherit; color: inherit;}
+ol, ul { list-style: none; }
