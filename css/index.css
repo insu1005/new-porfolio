@@ -1,7 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
 
 /* common -S */
+.fix-size { padding: 200px 0; }
 h1, .tit { font: 60px 'Black Han Sans'; cursor: default;}
+.content-tit {
+  margin: 0 0 60px 120px;
+  font-size: 120px; line-height: 134px; -webkit-text-stroke: 5px #fff;
+}
 .text-box h2 { 
   margin-bottom: 22px;
   font-size: 60px; line-height: 90px;
@@ -471,14 +476,6 @@ h1, .tit { font: 60px 'Black Han Sans'; cursor: default;}
     position: fixed;
     z-index: -1;
   }
-  
-  /* Main contents -S*/
-  .fix-size { padding: 200px 0; }
-  .content-tit {
-    margin: 0 0 60px 120px;
-    font-size: 120px; line-height: 134px; -webkit-text-stroke: 5px #fff;
-  }
-  /* Main contents -E*/
 
 
 /* introduction -S */
@@ -617,6 +614,28 @@ h1, .tit { font: 60px 'Black Han Sans'; cursor: default;}
 
 /* daehan -S */
 .daehan {background-color: #fff;}
+.daehan > .tit { color: rgb(17, 20, 126);  -webkit-text-stroke: 5px rgb(168, 206, 255); }
+.daehan-wrap { display: flex; flex-direction: row-reverse; justify-content: flex-end; }
+.daehan-wrap figure { width: 900px; }
+.daehan-wrap figure img { 
+  width: 100%; 
+  border: 10px solid rgb(17, 20, 126);
+  box-shadow: 0 0 20px #000;
+}
+.daehan-wrap .text-box { margin: 200px 100px 0; }
+.daehan-wrap .text-box::after {content: "";
+  display: block;
+  margin-top: 200px;
+  width: 600px; height: 390px;
+  border-bottom: 20px solid rgb(17, 20, 126);
+  background-image: url(../img/daehan-model.png);
+
+}
+.daehan .connect { 
+  margin: 0 0 50px 120px; 
+  transform: translateY(-180%);
+}
+
 /* daehan -E */
 /* soma -S */
 .soma {background-color: #ff9500;}
