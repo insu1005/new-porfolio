@@ -14,12 +14,14 @@ $(function () {
     $(".all-menu-open").on("click", function () {
       $(".all-menu-wrap").css({
         top: "0",
+        transform: "translateY(0)"
       });
     });
 
     $(".all-menu-close").on("click", function () {
       $(".all-menu-wrap").css({
-        top: "-200%",
+        top: "-100%",
+        transform: "translateY(-150%)"
       });
     });
 
