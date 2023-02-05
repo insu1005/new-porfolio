@@ -9,7 +9,7 @@
 /* skip-nav -S */
 .skip-nav-tit{ 
   width: 100%; height: 30px; 
-  text-align: center; line-height: 30px; color:#fff; 
+  line-height: 30px; color:#fff; text-align: center; 
   background-color: #f47e33;
   position: absolute; left: 0; top: -100px; z-index: 20;
 }
@@ -29,8 +29,7 @@ body { font: 16px/1 'Noto Sans KR','돋움',dotum, AppleGothic, sans-serif; colo
   position: absolute; left: -9999px; top:0;
   overflow: hidden;
 }
-.clearfix::after {
-  content: ""; 
+.clearfix::after { content: ""; 
   display: block; 
   clear: both;
 }
@@ -93,16 +92,14 @@ body { font: 16px/1 'Noto Sans KR','돋움',dotum, AppleGothic, sans-serif; colo
   line-height: 36px; text-indent: 40px;
   transition: all 0.7s;
 }
-.gnb:before {
-  content: ""; 
+.gnb:before { content: ""; 
   display: none; 
   width:100%; height: 90px; 
   background-color: #fff; 
   position: absolute; left: 0; top: 0; z-index: -20; 
   transition: all 0.7s;
 }
-.gnb:after {
-  content: ""; 
+.gnb:after { content: ""; 
   display: none; 
   width:100%; height: 250px; 
   background-color: #f5f5f5; 
@@ -140,7 +137,7 @@ legend{
   text-indent: -9999px;
 }
 label{ 
-  font-size: 0;/* text-indent -9999 적용시 기능이 작동 안함 폰트 사이즈 0으로 대체 */
+  font-size: 0;
   text-indent: -9999px;
 }
 .tnb-search-box fieldset > input{ 
@@ -209,8 +206,8 @@ input::placeholder{  font-weight: 300; font-size: 26px; line-height: 40px; text-
   float: left;
   width: 150px; height: 45px; 
   margin-right: 46px;
-  background-image: url(../img/logo.png); background-position: 0 45px;
   text-indent: -9999px; 
+  background-image: url(../img/logo.png); background-position: 0 45px;
 }
 .f-menu { 
   float: left;
@@ -271,8 +268,7 @@ input::placeholder{  font-weight: 300; font-size: 26px; line-height: 40px; text-
   cursor: pointer;
 }
 .f-site p{ position: relative;}
-.f-site p:after{
-  content:""; 
+.f-site p:after{ content:""; 
   display: block; 
   width:13px; height:6px; 
   background-image: url(../img/f-site-arrow.png);

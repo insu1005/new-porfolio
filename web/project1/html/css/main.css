@@ -164,8 +164,8 @@ span.swiper-pagination-bullet-active {background-color: #fff;}
 }
 .shape { 
   display: block;
-  margin: 0 auto 0;
   width: 181px; height: 76px;
+  margin: 0 auto 0;
   border-radius: 28px;
   font-weight: 600; font-size: 17px; line-height: 76px; color: #555; text-indent: 20px;  
   background-color: #f0f0f0; 
@@ -197,8 +197,8 @@ span.swiper-pagination-bullet-active {background-color: #fff;}
 
 .news-img{ 
   float: left;
-  margin-right: 40px;
   width: 400px; height: 600px;
+  margin-right: 40px;
   background-color: #000;
   position: relative;
   overflow: hidden;
@@ -309,9 +309,7 @@ span.swiper-pagination-bullet-active {background-color: #fff;}
 
 .display {background-color: #f0f0f0;}
 .mySwiper2 { padding-top: 80px;}
-.mySwiper2 .swiper-wrapper {
-  padding-top: 80px;
-}
+.mySwiper2 .swiper-wrapper { padding-top: 80px; }
 /* display sec swiper -S */
 .mySwiper2 > .swiper-wrapper .swiper-slide { 
   width: 300px; height: 600px;
@@ -330,8 +328,7 @@ span.swiper-pagination-bullet-active {background-color: #fff;}
 /* display2 -S */
 .mySwiper2 > .swiper-wrapper > .display2 { 
   width: 100%; height: 46px; 
-  margin: 0 auto;
-  padding-top: 326px; 
+  margin: 0 auto; padding-top: 326px; 
   background-image: url(../img/display2.png);
 }
 /* display2 -E */
@@ -446,8 +443,7 @@ span.swiper-pagination-bullet-active {background-color: #fff;}
   font-size: 24px; color: #999; line-height: 50px; text-indent: 37px;
   position: relative; left: 0; top: 120px;
 }
-.more:after { 
-  content: ""; 
+.more:after { content: ""; 
   width: 21px; height: 18px; 
   background-image: url(../img/tab-more-arrow.png); 
   position: absolute; left: 170px; top: 18px;
@@ -548,8 +544,8 @@ span.swiper-pagination-bullet-active {background-color: #fff;}
   background-image: url(../img/education6.png);
 }
 .the-more:hover { 
-  background-color: #f47e33;
   color: #fff;
+  background-color: #f47e33;
 }
 /* main section 4 -E */
 
