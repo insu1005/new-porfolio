@@ -512,7 +512,6 @@
   /* hover -S */
   .business-visual-mobile .slick-prev.slick-arrow:hover { background-color: #fff; background-image: url(../img/business-slider-left-arrow.png); }
   .business-visual-mobile .slick-next.slick-arrow:hover { background-color: #fff; background-image: url(../img/business-slider-right-arrow.png); }
-  }
   /* hover -E */
   /* business-visual-mobile -E */
   /* business -E */
@@ -544,6 +543,7 @@
     .news .inner .news-list li figure { width: 100%; }
     .news .inner > a { right: 6%; top: 5%; }
   /* news -E */
+  }
   @media (min-width:781px) and (max-width:1024px) {
   /* MAIN COMMON -S */
     .sec-header > .tit { font-size: 4rem; line-height: 5rem; }

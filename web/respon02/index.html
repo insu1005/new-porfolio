@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/respon02.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-96x96.png">
@@ -63,7 +63,7 @@
     </header>
     <main class="container">
         <h2 class="hidden">메인콘텐츠</h2>
-        <section class="visual">
+        <div class="visual">
             <div class="slide slide1">
                 <div class="inner">
                     <strong>예약즉시 출발 상품</strong>
@@ -82,16 +82,18 @@
                     <p>옆동네 놀러가는 재밌는 경험</p>
                 </div>
             </div>
-        </section>
+        </div>
         <div class="container-wrap">
             <section class="top3 sec">
+                <h3 class="hidden">가장 많이 찾는 여행상품 입니다</h3>
                 <div class="inner">
                     <header class="sec-header">
-                        <h3 class="tit">최신 가장 HOT한 여행상품 TOP3</h3>
+                        <h4 class="tit">최신 가장 HOT한 여행상품 TOP3</h4>
                         <p class="desc"></p>
                     </header>
                     <div class="top3-wrap clearfix">
                         <article class="top3-article">
+                            <h5 class="hidden">첫번째 상품입니다</h5>
                             <figure>
                                 <img src="img/promotion1.jpg" alt="여러분들을 기다리는 뉴욕입니다">
                                 <div class="hit-detail">
@@ -106,6 +108,7 @@
                             </div>
                         </article>
                         <article class="top3-article">
+                            <h5 class="hidden">두번째 상품입니다</h5>
                             <figure>
                                 <img src="img/promotion2.jpg" alt="아름다운 오사카 관광객이 제일 많은 곳으로 소문난 곳">
                                 <div class="hit-detail">
@@ -120,6 +123,7 @@
                             </div>
                         </article>
                         <article class="top3-article">
+                            <h5 class="hidden">3번째 상품입니다</h5>
                             <figure>
                                 <img src="img/promotion3.jpg" alt="예술과 감성의 우아한 도시!">
                                 <div class="hit-detail">
@@ -137,18 +141,19 @@
                 </div>
             </section>
             <section class="bbs sec">
+                <h3 class="hidden">고객님들을 위한 게시판입니다</h3>
                 <div class="inner clearfix">
                     <header class="sec-header hidden">
-                        <h3 class="tit">sns와 게시판</h3>
+                        <h4 class="tit">sns와 게시판</h4>
                         <p class="desc">여러분들과 소통하는 게시판입니다.</p>
                     </header>
                     <article class="sns">
-                        <h4 class="hidden">sns</h4>
+                        <h5 class="hidden">sns</h5>
                         <a href="#">카카오톡 1:1 상담</a>
                         <a href="#">전화 상담 신청</a>
                     </article>
                     <article class="notice">
-                        <h4>NOTICE</h4>
+                        <h5>NOTICE</h5>
                         <ul class="notice-list">
                             <li><a href="#">코타키나발루 하얏트 & 하얏트 4/5/6일 (여행경비 50만원 지원)</a></li>
                             <li><a href="#">&#91;가족여행추천&#93; 싱가포르/페낭 6/7일 크루즈</a></li>
@@ -195,10 +200,10 @@
         </div>
       </footer>
 
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
 
-    <script type="text/javascript">
+    <script>
        $(document).ready(function(){
       $('.visual').slick({
         fade:true,
@@ -217,14 +222,14 @@
 
     <script>
         $(document).ready(function(){
-        isHide = true; //변수 하나를 설정 화면에 보이면 true, 보이지 않으면 false;
+        isHide = true;
         $('.all-menu').on('click',function(){
-            if(isHide){ //보이니까 숨기고
+            if(isHide){ 
             isHide = false;
-            $('.nav-wrap').show();   //요소를 안보이게 한다.
-            }else{  //안보이니까 보이게 한다
+            $('.nav-wrap').show();   
+            }else{  
             isHide = true;
-            $('.nav-wrap').hide();   //요소를 보이게 한다
+            $('.nav-wrap').hide();   
             }
         })
         })

@@ -166,18 +166,21 @@
   /* search -E */
   /* tnb -E */
   /* all-menus -S */
-  .all-menu-open { display: flex; justify-content: space-between; align-items: center; }
-  .all-menu-open .open-icon { margin-right: 1.1rem; }
-  .all-menu-open > p { font-size: 2rem; line-height: 2rem; color: #fff; }
-  .all-menu-open .open-icon span{ transition: all 0.3s;}
-  .all-menu .open-icon { 
-    display: flex; flex-direction: column; justify-content: space-between;
-    width: 3.6rem; height:2.4rem
+  .all-menu-open { 
+    display: flex; justify-content: space-between; align-items: center; 
+    cursor: pointer;
   }
-  .all-menu .open-icon span { 
+  .all-menu-open .open-icon { 
+    display: flex; flex-direction: column; justify-content: space-between;
+    width: 3.6rem; height:2.4rem;
+    margin-right: 1.1rem; 
+  }
+  .all-menu-open > p { font-size: 2rem; line-height: 2rem; color: #fff; }
+  .all-menu-open .open-icon span{ 
     display: block; 
     width: 3.6rem; height: 0.4rem;
     background-color: #fff;
+    transition: all 0.3s;
   }
   .all-menu-wrap { 
     display: flex;
@@ -267,6 +270,7 @@
   .all-menu-close { 
     display: flex; align-items: center;
     position: absolute; left: 6.5rem; top: 5rem;
+    cursor: pointer;
   }
   .all-menu-close .close-icon { 
     display: flex;

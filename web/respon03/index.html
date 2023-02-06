@@ -1,36 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>현대 미술관</title>
 
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="shortcut icon" href="img/favicon.png" >
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $(".all-menu-open").on("click", function () {
-          $(".gnb-m").css({
-            right: "0px",
-          });
-        });
-
-        $(".all-menu-close").on("click", function () {
-          $(".gnb-m").css({
-            right: "-100%",
-          });
-        });
-
-        $(".gnb-m-wrap .depth1 > a").on("click", function () {
-          $(this).next().show();
-          
-        });
-      });
-    </script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body>
     <aside class="skip-nav">
@@ -39,7 +18,7 @@
     <div class="wrap">
       <header class="header">
         <h1 class="logo">
-          <a href="#"><img src="img/logo.svg" alt="logo-w.svg" /></a>
+          <a href="#"><img src="img/logo.svg" alt="logo-w.svg"></a>
         </h1>
         <nav class="gnb">
           <ul>
@@ -170,8 +149,9 @@
             </p>
           </header>
           <article class="visual-article">
+            <h4 class="hidden">전시회 일정을 소개해드립니다</h4>
             <div class="visual-box">
-              <h4 class="visual-tit"><em>서울</em>현대 미술관</h4>
+              <h5 class="visual-tit"><em>서울</em>현대 미술관</h5>
               <p class="visual-desc">서울 종로구 삼청로 30 : 10:00–18:00</p>
               <ul class="visual-list">
                 <li><a href="#">전시</a></li>
@@ -182,7 +162,7 @@
               </ul>
             </div>
             <div class="visual-box">
-              <h4 class="visual-tit"><em>과천</em>현대 미술관</h4>
+              <h5 class="visual-tit"><em>과천</em>현대 미술관</h5>
               <p class="visual-desc">서울 종로구 삼청로 30 : 10:00–18:00</p>
               <ul class="visual-list">
                 <li><a href="#">전시</a></li>
@@ -193,7 +173,7 @@
               </ul>
             </div>
             <div class="visual-box">
-              <h4 class="visual-tit"><em>덕수궁</em>현대 미술관</h4>
+              <h5 class="visual-tit"><em>덕수궁</em>현대 미술관</h5>
               <p class="visual-desc">서울 종로구 삼청로 30 : 10:00–18:00</p>
               <ul class="visual-list">
                 <li><a href="#">전시</a></li>
@@ -204,7 +184,7 @@
               </ul>
             </div>
             <div class="visual-box">
-              <h4 class="visual-tit"><em>청주</em>현대 미술관</h4>
+              <h5 class="visual-tit"><em>청주</em>현대 미술관</h5>
               <p class="visual-desc">서울 종로구 삼청로 30 : 10:00–18:00</p>
               <ul class="visual-list">
                 <li><a href="#">전시</a></li>
@@ -225,8 +205,9 @@
           </header>
           <div class="exhibi-wrap">
             <article class="exhibi-box">
+              <h4 class="hidden">서울전시회 일정 소개입니다</h4>
               <figure class="exhibi-img">
-                <img src="img/display1.png" alt="" />
+                <img src="img/display1.png" alt="서울에서 진행하는 예술공연입니다">
               </figure>
               <div class="exhibi-txt">
                 <em class="seoul">서울</em>
@@ -237,8 +218,9 @@
               </div>
             </article>
             <article class="exhibi-box">
+              <h4 class="hidden">인천전시회 일정 소개입니다</h4>
               <figure class="exhibi-img">
-                <img src="img/display2.png" alt="" />
+                <img src="img/display2.png" alt="인천에서 함께하는 신 예술">
               </figure>
               <div class="exhibi-txt">
                 <em class="incheon">인천</em>
@@ -249,8 +231,9 @@
               </div>
             </article>
             <article class="exhibi-box">
+              <h4 class="hidden">코엑스전시회 일정 소개입니다</h4>
               <figure class="exhibi-img">
-                <img src="img/display3.png" alt="" />
+                <img src="img/display3.png" alt="코엑스에서 여러분과 함께 예술을 합니다">
               </figure>
               <div class="exhibi-txt">
                 <em class="coex">코엑스</em>
@@ -261,8 +244,9 @@
               </div>
             </article>
             <article class="exhibi-box">
+              <h4 class="hidden">롯데몰전시회 일정 소개입니다</h4>
               <figure class="exhibi-img">
-                <img src="img/display4.png" alt="" />
+                <img src="img/display4.png" alt="롯데몰 협판 예술 전시회입니다">
               </figure>
               <div class="exhibi-txt">
                 <em class="lotte">롯데몰</em>
@@ -280,6 +264,30 @@
         <address>서울시 종로구 삼청로30(소격동)(우)03062</address>
         <p><strong>TEL</strong>02-3701-9500</p>
       </footer>
+    
+    <!-- all-menu -S -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".all-menu-open").on("click", function () {
+          $(".gnb-m").css({
+            right: "0px",
+          });
+        });
+
+        $(".all-menu-close").on("click", function () {
+          $(".gnb-m").css({
+            right: "-100%",
+          });
+        });
+
+        $(".gnb-m-wrap .depth1 > a").on("click", function () {
+          $(this).next().show();
+          
+        });
+      });
+    </script>
+    <!-- all-menu -E -->
     </div>
   </body>
 </html>
